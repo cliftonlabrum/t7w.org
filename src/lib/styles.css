@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background: #F9F0E9;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+	h2 {
+		color: #074567;
+		font-size: 1.4rem;
+		margin: 0 0 10px 0;
+	}
+	h3 {
+		color: #074567;
+		font-size: 1rem;
+		margin: 0 0 10px 0;
+		opacity: 0.7;
+	}
