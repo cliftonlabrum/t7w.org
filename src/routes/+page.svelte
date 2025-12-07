@@ -1,8 +1,8 @@
 <script lang="ts">
 	import '$lib/styles.css';
-	import ButtonBig from '$lib/ButtonBig.svelte';
-	import WhatsApp from '$lib/WhatsApp.svelte';
-	import Logo from '$lib/Logo.svelte';
+	import ButtonBig from '$lib/components/ButtonBig.svelte';
+	import WhatsApp from '$lib/components/WhatsApp.svelte';
+	import Logo from '$lib/components/Logo.svelte';
 </script>
 
 <main>
@@ -26,6 +26,14 @@
 			label="Chat on WhatsApp"
 			iconColor="#53FF8D"
 			backgroundColor="#074567"
+		/>
+		<ButtonBig
+			href="/service"
+			icon="star"
+			label="Giving Machine Youth Activity"
+			iconColor="#53FF8D"
+			backgroundColor="#074567"
+			target="_self"
 		/>
 	</section>
 

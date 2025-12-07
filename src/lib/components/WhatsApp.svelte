@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '$lib/styles.css';
-	import ButtonSmall from '$lib/ButtonSmall.svelte';
+	import ButtonSmall from '$lib/components/ButtonSmall.svelte';
 </script>
 
 <article>

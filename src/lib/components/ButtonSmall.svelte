@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Icon from '$lib/Icon.svelte';
+	import Icon from '$lib/components/Icon.svelte';
 	type Props = {
 		href: string;
-		icon: string;
+		icon?: string;
 		label: string;
 		blank?: boolean;
 	};
@@ -10,7 +10,7 @@
 </script>
 
 <a {href} target="_blank" class="button"
-	><i><Icon name={icon} width={20} color="#074567" /></i><span>{label}</span></a
+	>{#if icon}<i><Icon name={icon} width={20} color="#074567" /></i>{/if}<span>{label}</span></a
 >
 
 <style>

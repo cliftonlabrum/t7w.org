@@ -1,16 +1,17 @@
 <script lang="ts">
-	import Icon from '$lib/Icon.svelte';
+	import Icon from '$lib/components/Icon.svelte';
 	type Props = {
 		href: string;
 		icon: string;
 		label: string;
 		iconColor: string;
 		backgroundColor: string;
+		target?: string;
 	};
-	let { href, icon, label, iconColor, backgroundColor }: Props = $props();
+	let { href, icon, label, iconColor, backgroundColor, target = '_blank' }: Props = $props();
 </script>
 
-<a {href} target="_blank" style="background: {backgroundColor};"
+<a {href} {target} style="background: {backgroundColor};"
 	><i><Icon name={icon} width={26} color={iconColor} /></i><span>{label}</span></a
 >
 
