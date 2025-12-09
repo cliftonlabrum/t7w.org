@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { DataApp, ButtonLink } from '$lib/global';
-	import ButtonSubmit from '$lib/components/ButtonSubmit.svelte';
+	import { DataApp, ButtonLink, goto } from '$lib/global'
+	import ButtonSubmit from '$lib/components/ButtonSubmit.svelte'
 </script>
 
 <section>
@@ -23,14 +23,14 @@
 	/>
 </section>
 
-<form>
+<form on:submit|preventDefault>
 	<h4>Sign Up</h4>
 	<p>To have youth come to your house, please submit your name.</p>
 	<input type="text" placeholder="Your full name..." bind:value={DataApp.name} />
 	<ButtonSubmit
 		label="Submit"
 		onclick={async () => {
-			DataApp.submitService();
+			await DataApp.submitService()
 		}}
 	/>
 </form>

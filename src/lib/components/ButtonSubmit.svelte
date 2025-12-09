@@ -1,12 +1,17 @@
 <script lang="ts">
 	type Props = {
-		label: string;
-		onclick?: () => void;
-	};
-	let { label, onclick }: Props = $props();
+		label: string
+		onclick?: () => void
+	}
+	let { label, onclick }: Props = $props()
 </script>
 
-<button {onclick}>{label}</button>
+<button
+	onclick={(e) => {
+		e.preventDefault()
+		onclick && onclick()
+	}}>{label}</button
+>
 
 <style>
 	button {

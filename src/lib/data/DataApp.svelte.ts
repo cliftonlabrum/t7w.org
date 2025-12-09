@@ -18,11 +18,12 @@ class DataApp{
       return
     }
     this.loading = true
-console.log('submit...')
+
     //await API.post('/service', { name: this.name })
     socket.emit('t7w:service:create', this.name)
- 
     this.loading = false
+
+    //>>>
     goto('/service/list?success=true')
   }
 }

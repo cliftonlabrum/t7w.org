@@ -8,7 +8,6 @@
 		const results = await API.get('/service')
 
 		list = results.data.list
-		console.log(list)
 
 		let successParam = page.url.searchParams.get('success')
 		success = successParam === 'true'
