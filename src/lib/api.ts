@@ -1,10 +1,10 @@
 import axios from 'axios'
 import { dev } from '$app/environment'
 
-const baseURL = 'https://api.labrum.co/'
+let baseURL = 'https://api.labrum.co/t7w/'
 if (dev) {
   //Local dev
-  //baseURL = 'http://localhost:8888/'
+  baseURL = 'http://localhost:5555/t7w/'
 }
 
 //==============================

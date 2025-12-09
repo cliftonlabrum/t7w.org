@@ -1,7 +1,11 @@
 <script lang="ts">
-	import '$lib/styles.css';
-	import { DataApp, Loader } from '$lib/global';
-	let { children } = $props();
+	import '$lib/styles.css'
+	import { DataApp, Loader, onMount } from '$lib/global'
+	let { children } = $props()
+
+	onMount(() => {
+		DataApp.start()
+	})
 </script>
 
 <main>
