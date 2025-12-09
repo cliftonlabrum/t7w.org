@@ -3,6 +3,14 @@
 	import ButtonSubmit from '$lib/components/ButtonSubmit.svelte'
 </script>
 
+<svelte:head>
+	<meta property="og:title" content="Giving Machine Youth Service • Thatcher 7th Ward" />
+	<meta property="og:image" content="/images/open-graph-service.png" />
+	<!-- Optional: description, URL, type, etc. -->
+	<meta property="og:description" content="Giving Machine Youth Service Project" />
+	<meta property="og:type" content="website" />
+</svelte:head>
+
 <section>
 	<p>
 		A few youth will come to your house for about <b>15 minutes.</b> They will do small household chores,

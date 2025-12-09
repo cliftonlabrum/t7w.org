@@ -1,9 +1,18 @@
 <script lang="ts">
-	import '$lib/styles.css';
-	import ButtonBig from '$lib/components/ButtonBig.svelte';
-	import WhatsApp from '$lib/components/WhatsApp.svelte';
-	import Logo from '$lib/components/Logo.svelte';
+	import '$lib/styles.css'
+	import ButtonBig from '$lib/components/ButtonBig.svelte'
+	import WhatsApp from '$lib/components/WhatsApp.svelte'
+	import Logo from '$lib/components/Logo.svelte'
 </script>
+
+<svelte:head>
+	<meta
+		property="og:title"
+		content="The Church of Jesus Christ of Latter-day Saints • Thatcher 7th Ward"
+	/>
+	<meta property="og:image" content="/images/open-graph.png" />
+	<meta property="og:type" content="website" />
+</svelte:head>
 
 <main>
 	<Logo />
